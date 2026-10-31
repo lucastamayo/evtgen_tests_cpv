@@ -1,0 +1,26 @@
+{
+  "original_bytes": 16571475904,
+  "artifact_count": 24,
+  "compressed_bytes": 6626720034,
+  "archive_validation": "Gzip stream integrity and all member paths/sizes verified",
+  "parts": [
+    {
+      "name": "evtgen-local.tar.gz.part-000",
+      "bytes": 1992294400
+    },
+    {
+      "name": "evtgen-local.tar.gz.part-001",
+      "bytes": 1992294400
+    },
+    {
+      "name": "evtgen-local.tar.gz.part-002",
+      "bytes": 1992294400
+    },
+    {
+      "name": "evtgen-local.tar.gz.part-003",
+      "bytes": 649836834
+    }
+  ],
+  "checksums": "475b107260cf7be17d7238ee9a3f7c67c1d7d892e45fcaa68388b39480f31d27  evtgen-local.tar.gz.part-000\n5c1786aff9d309ed7639ec0f209191c16e5eeac771115fc2dfa3c25f9b5eebd9  evtgen-local.tar.gz.part-001\ndedeb747d1628cb3fb7ba5223cbd188bbf59d6103503fc7951547bb3b72dcb21  evtgen-local.tar.gz.part-002\n7b31762168bc96b8eb118982db1349b3a64ca424881d1d653892df0d96b6c94d  evtgen-local.tar.gz.part-003\n",
+  "publication": "Pending GitHub authentication; no remote upload completed."
+}

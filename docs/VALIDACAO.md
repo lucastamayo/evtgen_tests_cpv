@@ -23,3 +23,8 @@ shell passaram por `bash -n`; os utilitários Python passaram por compilação d
 sintaxe. A receita de reconstrução completa das dependências a partir dos
 pacotes originais ainda não foi executada em ambiente limpo. O FWLite/CMSSW
 histórico não foi executado nesta validação.
+
+O arquivo compactado dos 24 artefatos históricos foi lido integralmente:
+a integridade gzip e todos os nomes e tamanhos internos foram conferidos contra
+o inventário. As quatro partes têm SHA256 registrado em
+`provenance/release-assets.json`.
