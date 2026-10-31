@@ -163,5 +163,20 @@
         "record_mixing_closure_max_abs_vs_cos": 1.999991625104987
       }
     ]
+  },
+  "reproducibility_check": {
+    "variant": "2.0.0",
+    "model": "SVS",
+    "attempts": 100,
+    "seed": 67890,
+    "result": "Two independently generated HepMC files were byte-identical",
+    "sha256": "a27b586148e640e9007f13fc6cf562ab3528ba6989608292b5c8d80f737daf2a"
+  },
+  "mixing0_check": {
+    "variant": "2.0.0",
+    "model": "SSD_CP",
+    "attempts": 100,
+    "seed": 67890,
+    "generation_and_analysis": "passed"
   }
 }
