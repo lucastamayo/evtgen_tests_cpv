@@ -1,0 +1,167 @@
+{
+  "validation_date": "2026-10-31",
+  "python": "3.13.5",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "compiler": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+  "cmake": "cmake version 3.22.1",
+  "dependency_build": "Existing installations in /home/darthlucas/local; clean dependency rebuild not validated.",
+  "2.0.0": {
+    "build": "passed",
+    "attempts_per_model": 1000,
+    "seed": 12345,
+    "analysis": [
+      {
+        "model": "SVS",
+        "path": "/home/darthlucas/evtgen-cpv-tests/runs/2.0.0_1000_12345/SVS.hepmc",
+        "events_seen": 1000,
+        "signals": 861,
+        "skipped_short_particles": 0,
+        "mean_t_ps": 1.5455330006287902,
+        "initial_B0_fraction": 0.45760743321718933,
+        "mixed_chain_fraction": 0.1951219512195122,
+        "record_mixed_like_fraction": 0.1951219512195122,
+        "initial_final_opposite_fraction": 0.1951219512195122,
+        "expected_mixed_count_from_delta_m": 162.38663070386912,
+        "expected_mixed_fraction_from_delta_m": 0.18860235854107912,
+        "mixing_counts": {
+          "unmixed": 693,
+          "mixed": 168,
+          "weird": 0
+        },
+        "initial_final_closure_rms_vs_cos": 0.2127004526876615,
+        "initial_final_closure_max_abs_vs_cos": 0.7324332269850504,
+        "record_mixing_closure_rms_vs_cos": 0.2127004526876615,
+        "record_mixing_closure_max_abs_vs_cos": 0.7324332269850504
+      },
+      {
+        "model": "SSD_CP",
+        "path": "/home/darthlucas/evtgen-cpv-tests/runs/2.0.0_1000_12345/SSD_CP.hepmc",
+        "events_seen": 1000,
+        "signals": 819,
+        "skipped_short_particles": 0,
+        "mean_t_ps": 1.6245548738577504,
+        "initial_B0_fraction": 0.6092796092796092,
+        "mixed_chain_fraction": 0.19291819291819293,
+        "record_mixed_like_fraction": 0.19291819291819293,
+        "initial_final_opposite_fraction": 0.15262515262515264,
+        "expected_mixed_count_from_delta_m": 164.03369028513913,
+        "expected_mixed_fraction_from_delta_m": 0.200285336123491,
+        "mixing_counts": {
+          "unmixed": 661,
+          "mixed": 125,
+          "weird": 33
+        },
+        "initial_final_closure_rms_vs_cos": 1.193774219658975,
+        "initial_final_closure_max_abs_vs_cos": 1.9676399200924464,
+        "record_mixing_closure_rms_vs_cos": 1.1353878729021878,
+        "record_mixing_closure_max_abs_vs_cos": 1.8785839111788591
+      }
+    ]
+  },
+  "2.0.0-label-patch": {
+    "build": "passed",
+    "attempts_per_model": 1000,
+    "seed": 12345,
+    "analysis": [
+      {
+        "model": "SVS",
+        "path": "/home/darthlucas/evtgen-cpv-tests/runs/2.0.0-label-patch_1000_12345/SVS.hepmc",
+        "events_seen": 1000,
+        "signals": 861,
+        "skipped_short_particles": 0,
+        "mean_t_ps": 1.5455330006287902,
+        "initial_B0_fraction": 0.45760743321718933,
+        "mixed_chain_fraction": 0.1951219512195122,
+        "record_mixed_like_fraction": 0.1951219512195122,
+        "initial_final_opposite_fraction": 0.1951219512195122,
+        "expected_mixed_count_from_delta_m": 162.38663070386912,
+        "expected_mixed_fraction_from_delta_m": 0.18860235854107912,
+        "mixing_counts": {
+          "unmixed": 693,
+          "mixed": 168,
+          "weird": 0
+        },
+        "initial_final_closure_rms_vs_cos": 0.2127004526876615,
+        "initial_final_closure_max_abs_vs_cos": 0.7324332269850504,
+        "record_mixing_closure_rms_vs_cos": 0.2127004526876615,
+        "record_mixing_closure_max_abs_vs_cos": 0.7324332269850504
+      },
+      {
+        "model": "SSD_CP",
+        "path": "/home/darthlucas/evtgen-cpv-tests/runs/2.0.0-label-patch_1000_12345/SSD_CP.hepmc",
+        "events_seen": 1000,
+        "signals": 836,
+        "skipped_short_particles": 0,
+        "mean_t_ps": 2.0373998769037986,
+        "initial_B0_fraction": 0.5107655502392344,
+        "mixed_chain_fraction": 0.19976076555023922,
+        "record_mixed_like_fraction": 0.19976076555023922,
+        "initial_final_opposite_fraction": 0.19976076555023922,
+        "expected_mixed_count_from_delta_m": 228.66710667912034,
+        "expected_mixed_fraction_from_delta_m": 0.27352524722382815,
+        "mixing_counts": {
+          "unmixed": 669,
+          "mixed": 167,
+          "weird": 0
+        },
+        "initial_final_closure_rms_vs_cos": 0.5700510050894896,
+        "initial_final_closure_max_abs_vs_cos": 1.3009732534257799,
+        "record_mixing_closure_rms_vs_cos": 0.5700510050894896,
+        "record_mixing_closure_max_abs_vs_cos": 1.3009732534257799
+      }
+    ]
+  },
+  "2.2.3": {
+    "build": "passed",
+    "attempts_per_model": 1000,
+    "seed": 12345,
+    "analysis": [
+      {
+        "model": "SVS",
+        "path": "/home/darthlucas/evtgen-cpv-tests/runs/2.2.3_1000_12345/SVS.hepmc",
+        "events_seen": 1000,
+        "signals": 844,
+        "skipped_short_particles": 0,
+        "mean_t_ps": 1.5238548433587946,
+        "initial_B0_fraction": 0.48104265402843605,
+        "mixed_chain_fraction": 0.17772511848341233,
+        "record_mixed_like_fraction": 0.17772511848341233,
+        "initial_final_opposite_fraction": 0.17772511848341233,
+        "expected_mixed_count_from_delta_m": 157.61387595938515,
+        "expected_mixed_fraction_from_delta_m": 0.1867462985300772,
+        "mixing_counts": {
+          "unmixed": 694,
+          "mixed": 150,
+          "weird": 0
+        },
+        "initial_final_closure_rms_vs_cos": 0.14593307949243206,
+        "initial_final_closure_max_abs_vs_cos": 0.2731641221855844,
+        "record_mixing_closure_rms_vs_cos": 0.14593307949243206,
+        "record_mixing_closure_max_abs_vs_cos": 0.2731641221855844
+      },
+      {
+        "model": "SSD_CP",
+        "path": "/home/darthlucas/evtgen-cpv-tests/runs/2.2.3_1000_12345/SSD_CP.hepmc",
+        "events_seen": 1000,
+        "signals": 831,
+        "skipped_short_particles": 0,
+        "mean_t_ps": 1.6128250000953235,
+        "initial_B0_fraction": 0.6064981949458483,
+        "mixed_chain_fraction": 0.19253910950661854,
+        "record_mixed_like_fraction": 0.19253910950661854,
+        "initial_final_opposite_fraction": 0.1684717208182912,
+        "expected_mixed_count_from_delta_m": 165.70204235720325,
+        "expected_mixed_fraction_from_delta_m": 0.19940077299302436,
+        "mixing_counts": {
+          "unmixed": 671,
+          "mixed": 140,
+          "weird": 20
+        },
+        "initial_final_closure_rms_vs_cos": 1.23496136305859,
+        "initial_final_closure_max_abs_vs_cos": 1.999991625104987,
+        "record_mixing_closure_rms_vs_cos": 1.227612028682217,
+        "record_mixing_closure_max_abs_vs_cos": 1.999991625104987
+      }
+    ]
+  }
+}

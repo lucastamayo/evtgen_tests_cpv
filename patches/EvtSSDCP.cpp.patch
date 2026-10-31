@@ -1,0 +1,14 @@
+--- a/src/EvtGenModels/EvtSSDCP.cpp
++++ b/src/EvtGenModels/EvtSSDCP.cpp
+@@ -208,6 +208,11 @@
+     EvtComplex amp;
+ 
+     EvtCPUtil::getInstance()->OtherIncoherentB( p, t, other_b, 0.5 );    // t is c*Dt (mm)
++    p->setAttribute( "ssdcp_truth", 1 );
++    p->setAttribute( "ssdcp_parent_pdg", EvtPDL::getStdHep( p->getId() ) );
++    p->setAttribute( "ssdcp_other_b_pdg", EvtPDL::getStdHep( other_b ) );
++    p->setAttribute( "ssdcp_flip", flip ? 1 : 0 );
++    p->setAttributeDouble( "ssdcp_t_mm", t );
+     static std::ofstream fout("ssdcp_debug.txt");
+ 
+     fout << t << " "

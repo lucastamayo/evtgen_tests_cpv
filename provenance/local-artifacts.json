@@ -1,0 +1,98 @@
+[
+  {
+    "path": "/home/darthlucas/programs/test/events_Bfactory.hepmc",
+    "bytes": 259908091
+  },
+  {
+    "path": "/home/darthlucas/programs/test/generator_evtgen202SSDCP",
+    "bytes": 630296
+  },
+  {
+    "path": "/home/darthlucas/programs/test/ssdcp_debug.txt",
+    "bytes": 3461939
+  },
+  {
+    "path": "/home/darthlucas/programs/test/events_Ups4S_SSDCP.hepmc",
+    "bytes": 96361954
+  },
+  {
+    "path": "/home/darthlucas/programs/test/events_SSDCP2.hepmc",
+    "bytes": 2465411424
+  },
+  {
+    "path": "/home/darthlucas/programs/test/generatorB",
+    "bytes": 641920
+  },
+  {
+    "path": "/home/darthlucas/programs/test/events_SSDCPNEW.hepmc",
+    "bytes": 2460060248
+  },
+  {
+    "path": "/home/darthlucas/programs/test/generator2",
+    "bytes": 630200
+  },
+  {
+    "path": "/home/darthlucas/programs/test/events_SSDCP3.hepmc",
+    "bytes": 2473342350
+  },
+  {
+    "path": "/home/darthlucas/programs/test/generatorpy",
+    "bytes": 559592
+  },
+  {
+    "path": "/home/darthlucas/programs/test/events_evtgen.hepmc",
+    "bytes": 263636571
+  },
+  {
+    "path": "/home/darthlucas/programs/test/events_SSDCP2_pythia.txt",
+    "bytes": 1021975529
+  },
+  {
+    "path": "/home/darthlucas/programs/test/events_SSDCP_pythia.txt",
+    "bytes": 1021574760
+  },
+  {
+    "path": "/home/darthlucas/programs/test/generator3",
+    "bytes": 630200
+  },
+  {
+    "path": "/home/darthlucas/programs/test/eventsSVS.hepmc",
+    "bytes": 2465849842
+  },
+  {
+    "path": "/home/darthlucas/programs/test/events_SVS_pythia.txt",
+    "bytes": 1021792428
+  },
+  {
+    "path": "/home/darthlucas/programs/test/events_SSDCP.hepmc",
+    "bytes": 53914614
+  },
+  {
+    "path": "/home/darthlucas/programs/test/evtgen_hepmc",
+    "bytes": 52072
+  },
+  {
+    "path": "/home/darthlucas/programs/test/cp_study/generator_ssdcp_label_patch",
+    "bytes": 654016
+  },
+  {
+    "path": "/home/darthlucas/programs/test/cp_study/generator_ssdcp_mixing0_test",
+    "bytes": 630168
+  },
+  {
+    "path": "/home/darthlucas/programs/test/cp_study/results_mixing0_test/events_SSDCP_mixing0.hepmc",
+    "bytes": 493430030
+  },
+  {
+    "path": "/home/darthlucas/programs/test/cp_study/results_ssdcp_label_patch/events_SSDCP_label_patch.hepmc",
+    "bytes": 2466060229
+  },
+  {
+    "path": "/home/darthlucas/programs/test/cp_study/results_ssdcp_label_patch/generation_50000.log",
+    "bytes": 136422
+  },
+  {
+    "path": "/home/darthlucas/programs/test/cp_study/results_ssdcp_label_patch/generation_5000.log",
+    "bytes": 131009
+  }
+]

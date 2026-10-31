@@ -1,0 +1,24 @@
+[
+  {
+    "model": "SVS",
+    "path": "eventsSVS.hepmc",
+    "events_seen": 1000,
+    "signals": 864,
+    "skipped_short_particles": 0,
+    "mean_t_ps": 1.4845730602678768,
+    "initial_B0_fraction": 0.49074074074074076,
+    "mixed_chain_fraction": 0.17592592592592593,
+    "initial_final_opposite_fraction": 0.17592592592592593
+  },
+  {
+    "model": "SSD_CP",
+    "path": "events_SSDCP2.hepmc",
+    "events_seen": 1000,
+    "signals": 886,
+    "skipped_short_particles": 0,
+    "mean_t_ps": 1.4272253446463459,
+    "initial_B0_fraction": 0.6049661399548533,
+    "mixed_chain_fraction": 0.18961625282167044,
+    "initial_final_opposite_fraction": 0.154627539503386
+  }
+]

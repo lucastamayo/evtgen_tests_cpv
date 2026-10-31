@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Source this file; dependency prefixes can be overridden before sourcing.
+REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+DEPS_PREFIX="${DEPS_PREFIX:-$HOME/local}"
+PYTHIA_PREFIX="${PYTHIA_PREFIX:-$DEPS_PREFIX/pythia8306}"
+HEPMC_PREFIX="${HEPMC_PREFIX:-$DEPS_PREFIX/hepmc2.06.10}"
+PHOTOS_PREFIX="${PHOTOS_PREFIX:-$DEPS_PREFIX/photos364}"
+TAUOLA_PREFIX="${TAUOLA_PREFIX:-$DEPS_PREFIX/tauola118}"
+export PYTHIA8DATA="$PYTHIA_PREFIX/share/Pythia8/xmldoc"
+export LD_LIBRARY_PATH="$PYTHIA_PREFIX/lib:$HEPMC_PREFIX/lib:$PHOTOS_PREFIX/lib:$TAUOLA_PREFIX/lib:${LD_LIBRARY_PATH:-}"
+export REPO_DIR PYTHIA_PREFIX HEPMC_PREFIX PHOTOS_PREFIX TAUOLA_PREFIX

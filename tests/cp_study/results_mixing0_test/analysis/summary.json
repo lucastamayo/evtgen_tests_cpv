@@ -1,0 +1,25 @@
+[
+  {
+    "model": "SSD_CP_MIX0",
+    "path": "cp_study/results_mixing0_test/events_SSDCP_mixing0.hepmc",
+    "events_seen": 10000,
+    "signals": 8553,
+    "skipped_short_particles": 0,
+    "mean_t_ps": 1.546885297551825,
+    "initial_B0_fraction": 0.6124166958961768,
+    "mixed_chain_fraction": 0.18975797965626096,
+    "record_mixed_like_fraction": 0.18975797965626096,
+    "initial_final_opposite_fraction": 0.16251607623056238,
+    "expected_mixed_count_from_delta_m": 1608.5932900771131,
+    "expected_mixed_fraction_from_delta_m": 0.18807357536269298,
+    "mixing_counts": {
+      "unmixed": 6930,
+      "mixed": 1390,
+      "weird": 233
+    },
+    "initial_final_closure_rms_vs_cos": 1.141908988097955,
+    "initial_final_closure_max_abs_vs_cos": 1.8446729216529216,
+    "record_mixing_closure_rms_vs_cos": 1.1122386832081241,
+    "record_mixing_closure_max_abs_vs_cos": 1.8446729216529216
+  }
+]

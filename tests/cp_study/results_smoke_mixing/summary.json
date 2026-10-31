@@ -1,0 +1,48 @@
+[
+  {
+    "model": "SVS",
+    "path": "eventsSVS.hepmc",
+    "events_seen": 1000,
+    "signals": 864,
+    "skipped_short_particles": 0,
+    "mean_t_ps": 1.4845730602678768,
+    "initial_B0_fraction": 0.49074074074074076,
+    "mixed_chain_fraction": 0.17592592592592593,
+    "record_mixed_like_fraction": 0.17592592592592593,
+    "initial_final_opposite_fraction": 0.17592592592592593,
+    "expected_mixed_count_from_delta_m": 155.03930718786344,
+    "expected_mixed_fraction_from_delta_m": 0.17944364257854564,
+    "mixing_counts": {
+      "unmixed": 712,
+      "mixed": 152,
+      "weird": 0
+    },
+    "initial_final_closure_rms_vs_cos": 0.11320472448665882,
+    "initial_final_closure_max_abs_vs_cos": 0.2675667730149496,
+    "record_mixing_closure_rms_vs_cos": 0.11320472448665882,
+    "record_mixing_closure_max_abs_vs_cos": 0.2675667730149496
+  },
+  {
+    "model": "SSD_CP",
+    "path": "events_SSDCP2.hepmc",
+    "events_seen": 1000,
+    "signals": 886,
+    "skipped_short_particles": 0,
+    "mean_t_ps": 1.4272253446463459,
+    "initial_B0_fraction": 0.6049661399548533,
+    "mixed_chain_fraction": 0.18961625282167044,
+    "record_mixed_like_fraction": 0.18961625282167044,
+    "initial_final_opposite_fraction": 0.154627539503386,
+    "expected_mixed_count_from_delta_m": 154.10325020566972,
+    "expected_mixed_fraction_from_delta_m": 0.17393143364071076,
+    "mixing_counts": {
+      "unmixed": 718,
+      "mixed": 137,
+      "weird": 31
+    },
+    "initial_final_closure_rms_vs_cos": 1.0682784762834836,
+    "initial_final_closure_max_abs_vs_cos": 1.9696729216529216,
+    "record_mixing_closure_rms_vs_cos": 1.0710182654576101,
+    "record_mixing_closure_max_abs_vs_cos": 1.9696729216529216
+  }
+]

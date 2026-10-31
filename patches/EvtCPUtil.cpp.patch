@@ -1,0 +1,50 @@
+--- a/src/EvtGenBase/EvtCPUtil.cpp
++++ b/src/EvtGenBase/EvtCPUtil.cpp
+@@ -335,36 +335,31 @@
+     //added by liming Zhang
+     enableFlip();
+     if ( ( isB0Mixed( p ) ) || ( isBsMixed( p ) ) ) {
+-        p->getParent()->setLifetime();
++        // The incoherent-mixing step already sampled the parent lifetime
++        // conditional on the mixed/unmixed decision. Re-sampling it here
++        // decorrelates the exported B-chain label from the decay time.
+         t = p->getParent()->getLifetime();
+     } else {
+         p->setLifetime();
+         t = p->getLifetime();
+     }
+ 
++    bool isMixed = ( ( isB0Mixed( p ) ) || ( isBsMixed( p ) ) );
++    EvtId effectiveTagSource = isMixed ? p->getParent()->getId() : p->getId();
++
+     if ( flipIsEnabled() ) {
+         //std::cout << " liming << flipIsEnabled " << std::endl;
+-        // Flip the flavour of the particle with probability probB
++        // Choose the flavour tag with probability probB, but do not rewrite
++        // the B IDs in the decay tree. Rewriting those IDs contaminates the
++        // HepMC production/mixing labels for SSD_CP decays.
+         bool isFlipped = ( EvtRandom::Flat( 0., 1. ) < probB );
+ 
+         if ( isFlipped ) {
+-            if ( ( isB0Mixed( p ) ) || ( isBsMixed( p ) ) ) {
+-                p->getParent()->setId(
+-                    EvtPDL::chargeConj( p->getParent()->getId() ) );
+-                p->setId( EvtPDL::chargeConj( p->getId() ) );
+-            } else {
+-                p->setId( EvtPDL::chargeConj( p->getId() ) );
+-            }
++            effectiveTagSource = EvtPDL::chargeConj( effectiveTagSource );
+         }
+     }
+ 
+-    if ( ( isB0Mixed( p ) ) || ( isBsMixed( p ) ) ) {
+-        // if B has mixed, tag flavour is charge conjugate of parent of B-meson
+-        otherb = EvtPDL::chargeConj( p->getParent()->getId() );
+-    } else {
+-        // else it is opposite flavour than this B hadron
+-        otherb = EvtPDL::chargeConj( p->getId() );
+-    }
++    otherb = EvtPDL::chargeConj( effectiveTagSource );
+ 
+     return;
+ }

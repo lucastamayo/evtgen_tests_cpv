@@ -1,0 +1,110 @@
+stages:
+  - build
+
+variables:
+  LCG_VERSION: "LCG_103"
+  GCC_VERSION: "12"
+  CLANG_VERSION: "12"
+  BUILD_TYPE: "Release"
+  BUILD_TESTS: "OFF"
+  BUILD_DOXYGEN: "OFF"
+  USE_HEPMC3: "ON"
+  USE_PYTHIA: "ON"
+  USE_PHOTOS: "ON"
+  USE_TAUOLA: "ON"
+
+.future_os_image:
+  variables:
+    LCG_OS: x86_64-el9
+    GCC_VERSION: "13"
+    CLANG_VERSION: "16"
+  image: gitlab-registry.cern.ch/lhcb-docker/os-base/alma9-devel:latest
+  tags:
+    - k8s-cvmfs
+
+.production_image:
+  variables:
+    LCG_OS: x86_64-centos7
+  image: gitlab-registry.cern.ch/lhcb-docker/os-base/centos7-devel:latest
+  tags:
+    - k8s-cvmfs
+
+.lcg_setup:
+  before_script:
+    - set +e && source /cvmfs/sft.cern.ch/lcg/views/setupViews.sh $LCG_VERSION $LCG_OS-$LCG_COMPILER; set -e
+
+.future_rules:
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+      allow_failure: false
+    - if: '$CI_PIPELINE_SOURCE == "push"'
+      allow_failure: true
+
+.build_template:
+  stage: build
+  extends:
+    - .lcg_setup
+  script:
+    - mkdir install
+    - mkdir build && cd build
+    - cmake -DCMAKE_BUILD_TYPE:STRING=$BUILD_TYPE -DCMAKE_INSTALL_PREFIX:PATH=$CI_PROJECT_DIR/install -DEVTGEN_HEPMC3:BOOL=$USE_HEPMC3 -DEVTGEN_PYTHIA:BOOL=$USE_PYTHIA -DEVTGEN_PHOTOS:BOOL=$USE_PHOTOS -DEVTGEN_TAUOLA:BOOL=$USE_TAUOLA -DEVTGEN_BUILD_TESTS:BOOL=$BUILD_TESTS -DEVTGEN_BUILD_VALIDATIONS:BOOL=$BUILD_TESTS -DEVTGEN_BUILD_DOXYGEN:BOOL=$BUILD_DOXYGEN $CI_PROJECT_DIR
+    - cmake --build .
+    - cmake --build . --target install
+
+build_clang_opt:
+  variables:
+    LCG_COMPILER: "clang$CLANG_VERSION-opt"
+  extends:
+    - .production_image
+    - .build_template
+
+build_gcc_opt:
+  variables:
+    LCG_COMPILER: "gcc$GCC_VERSION-opt"
+  extends:
+    - .production_image
+    - .build_template
+
+build_hepmc2_gcc_opt:
+  variables:
+    LCG_VERSION: "LCG_103_LHCB_7"
+    LCG_COMPILER: "gcc$GCC_VERSION-opt"
+    USE_HEPMC3: "OFF"
+  extends:
+    - .production_image
+    - .build_template
+
+build_gcc_dbg:
+  variables:
+    LCG_COMPILER: "gcc$GCC_VERSION-dbg"
+    BUILD_TYPE: "Debug"
+    BUILD_TESTS: "ON"
+    BUILD_DOXYGEN: "ON"
+  extends:
+    - .production_image
+    - .build_template
+  artifacts:
+    paths:
+      - install
+    expire_in: 1 day
+    when: always
+
+build_future_clang_opt:
+  variables:
+    LCG_VERSION: "LCG_104"
+    LCG_COMPILER: "clang$CLANG_VERSION-opt"
+  extends:
+    - .future_os_image
+    - .build_template
+  rules:
+    - !reference [.future_rules, rules]
+
+build_future_gcc_opt:
+  variables:
+    LCG_VERSION: "LCG_104"
+    LCG_COMPILER: "gcc$GCC_VERSION-opt"
+  extends:
+    - .future_os_image
+    - .build_template
+  rules:
+    - !reference [.future_rules, rules]

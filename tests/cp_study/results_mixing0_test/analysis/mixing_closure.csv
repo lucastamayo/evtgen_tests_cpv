@@ -1,0 +1,3 @@
+model,observable,bins,rms_vs_cos,max_abs_vs_cos,pull_rms_vs_cos
+SSD_CP_MIX0,initial_final,16,1.141908988097955,1.8446729216529216,16.770599515434796
+SSD_CP_MIX0,record_mixing,16,1.1122386832081241,1.8446729216529216,15.982827002663962
