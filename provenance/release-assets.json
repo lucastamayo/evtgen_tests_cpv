@@ -22,5 +22,39 @@
     }
   ],
   "checksums": "475b107260cf7be17d7238ee9a3f7c67c1d7d892e45fcaa68388b39480f31d27  evtgen-local.tar.gz.part-000\n5c1786aff9d309ed7639ec0f209191c16e5eeac771115fc2dfa3c25f9b5eebd9  evtgen-local.tar.gz.part-001\ndedeb747d1628cb3fb7ba5223cbd188bbf59d6103503fc7951547bb3b72dcb21  evtgen-local.tar.gz.part-002\n7b31762168bc96b8eb118982db1349b3a64ca424881d1d653892df0d96b6c94d  evtgen-local.tar.gz.part-003\n",
-  "publication": "Pending GitHub authentication; no remote upload completed."
+  "publication": "Published; all five remote asset sizes and SHA256 digests verified.",
+  "release_url": "https://github.com/lucastamayo/evtgen_tests_cpv/releases/tag/historical-data-v1",
+  "published_at": "2026-10-31T20:43:42Z",
+  "remote_assets": [
+    {
+      "name": "evtgen-local.tar.gz.part-000",
+      "size": 1992294400,
+      "digest": "sha256:475b107260cf7be17d7238ee9a3f7c67c1d7d892e45fcaa68388b39480f31d27",
+      "url": "https://github.com/lucastamayo/evtgen_tests_cpv/releases/download/untagged-22a3bcaf50c6023693c7/evtgen-local.tar.gz.part-000"
+    },
+    {
+      "name": "evtgen-local.tar.gz.part-001",
+      "size": 1992294400,
+      "digest": "sha256:5c1786aff9d309ed7639ec0f209191c16e5eeac771115fc2dfa3c25f9b5eebd9",
+      "url": "https://github.com/lucastamayo/evtgen_tests_cpv/releases/download/untagged-22a3bcaf50c6023693c7/evtgen-local.tar.gz.part-001"
+    },
+    {
+      "name": "evtgen-local.tar.gz.part-002",
+      "size": 1992294400,
+      "digest": "sha256:dedeb747d1628cb3fb7ba5223cbd188bbf59d6103503fc7951547bb3b72dcb21",
+      "url": "https://github.com/lucastamayo/evtgen_tests_cpv/releases/download/untagged-22a3bcaf50c6023693c7/evtgen-local.tar.gz.part-002"
+    },
+    {
+      "name": "evtgen-local.tar.gz.part-003",
+      "size": 649836834,
+      "digest": "sha256:7b31762168bc96b8eb118982db1349b3a64ca424881d1d653892df0d96b6c94d",
+      "url": "https://github.com/lucastamayo/evtgen_tests_cpv/releases/download/untagged-22a3bcaf50c6023693c7/evtgen-local.tar.gz.part-003"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size": 380,
+      "digest": "sha256:6ab46409f3316a2ca8c8c34dca83fd60e7aed45032ad9201b2fdca5dc3f0d17a",
+      "url": "https://github.com/lucastamayo/evtgen_tests_cpv/releases/download/untagged-22a3bcaf50c6023693c7/SHA256SUMS"
+    }
+  ]
 }

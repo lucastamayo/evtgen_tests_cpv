@@ -20,8 +20,8 @@ Confira os arquivos e a visibilidade no repositório de destino.
 Nesta preparação, os 24 artefatos (16.571.475.904 bytes originais) já foram
 compactados e conferidos em `release-assets/historical-data/`: quatro partes,
 6.626.720.034 bytes no total. O inventário e os checksums estão também em
-`provenance/release-assets.json`. Esses arquivos estão locais; ainda não foram
-enviados ao GitHub. O comando abaixo permite recriar o pacote em outro diretório.
+`provenance/release-assets.json`. Os arquivos foram publicados na [release histórica](https://github.com/lucastamayo/evtgen_tests_cpv/releases/tag/historical-data-v1), com tamanhos e
+SHA256 remotos conferidos. O comando abaixo permite recriar o pacote em outro diretório.
 
 Os eventos e dumps originais ultrapassam o tamanho adequado para Git. Para
 preservar os artefatos inventariados em `provenance/local-artifacts.json`, rode

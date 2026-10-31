@@ -82,3 +82,8 @@ Os componentes de terceiros mantêm seus avisos e licenças originais; veja
 `vendor/*/COPYING` e os arquivos de licença dentro dos pacotes. O script histórico
 `historical/setupEvtGen.sh` é preservado para consulta e usa versões/URLs antigas;
 o tutorial atual usa os pacotes locais, sem depender desses endereços.
+
+## Download dos dados históricos
+
+Os quatro arquivos de dados e `SHA256SUMS` estão na [release histórica](https://github.com/lucastamayo/evtgen_tests_cpv/releases/tag/historical-data-v1).
+Consulte `docs/PUBLICAR.md` para conferir os checksums e recuperar os eventos.
